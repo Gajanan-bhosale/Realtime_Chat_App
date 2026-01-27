@@ -41,7 +41,7 @@ const chatSchema = new mongoose.Schema(
     },
 
     groupImage: {
-      type: string,
+      type: String,
     },
 
     lastMessage: {
