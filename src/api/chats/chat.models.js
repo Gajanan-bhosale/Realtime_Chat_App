@@ -53,6 +53,11 @@ const chatSchema = new mongoose.Schema(
       type: Date,
     },
 
+    isDeleted: {
+      type: Boolean,
+      default: false
+    },
+
     isArchived: {
       type: Boolean,
       default: false,
@@ -64,5 +69,7 @@ const chatSchema = new mongoose.Schema(
 );
 
 chatSchema.index({ participants: 1 });
+chatSchema.index({ name: 1}, {unique: true})
+chatSchema.index({ isArchived: 1})
 
 export default mongoose.model('Chat', chatSchema);

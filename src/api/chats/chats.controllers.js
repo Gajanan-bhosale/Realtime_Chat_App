@@ -20,6 +20,7 @@ export const createChatController = asyncHandler(async (req, res) => {
     groupDescription,
   });
 
+  
   return res.status(201).json({
     status: 'Success',
     message: 'Group created successfully',
