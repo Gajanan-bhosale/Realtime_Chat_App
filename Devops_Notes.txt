@@ -1,3 +1,1 @@
-Devops = Devops is cultural process of delivering the application by automating the building, testing, and deployment of application.
-         It has culture that imporves organization ability to deliver application
 
